@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "TAO Prioritize Available",
+	"version": "0.1",
+	"description": "Sortes available tests, such that the ones that you can attemt are on the top",
+	"content_scripts": [
+		{
+			"matches": ["https://cybertest2.wmi.amu.edu.pl/taoDelivery/DeliveryServer/index"],
+			"js": [ "tao-sort.js" ]
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"contextMenus"
+	],
+	"author": "Robert Bendun",
+	"developer": {
+		"url": "https://bendun.cc",
+		"name": "Robert Bendun"
+	},
+	"license": "BSL-1.0"
+}
